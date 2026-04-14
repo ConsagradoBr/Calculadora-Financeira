@@ -4,7 +4,7 @@ public class CalculadoraFinanceira {
 
     public double calcularDesconto(double valor, double percentual) {
         if (valor < 0 || percentual < 0) {
-            throw new IllegalArgumentException("Valores nÃ£o podem ser negativos");
+            throw new IllegalArgumentException("Valores nao podem ser negativos");
         }
         return valor - (valor * percentual / 100);
     }
@@ -18,7 +18,7 @@ public class CalculadoraFinanceira {
 
     public double calcularMedia(double[] valores) {
         if (valores == null || valores.length == 0) {
-            throw new IllegalArgumentException("Lista invÃ¡lida");
+            throw new IllegalArgumentException("Lista invalida");
         }
 
         double soma = 0;
